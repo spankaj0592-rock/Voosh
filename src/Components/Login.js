@@ -7,7 +7,7 @@ import { AiFillCheckCircle } from "react-icons/ai";
 import Button from "./Button";
 
 const Login = () => {
-    const user =1;
+    const user =null;
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -108,7 +108,7 @@ const Login = () => {
                     />
                   </div>
                 </div>
-                  {user }    
+                  {user ? alert("userLoggid In") :    
                 <div className="full_width" style={{ marginBottom: 5 }}>
                   <div className="input_container">
                     <div className="input_label">
@@ -126,7 +126,7 @@ const Login = () => {
                     />
                   </div>
                 </div>
-
+                  }
                 <div className="full_width" style={{ marginBottom: 5 }}>
                   <div className="input_container">
                     <div className="input_label">
