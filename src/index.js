@@ -5,6 +5,11 @@ import App from './App';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+if (localStorage.getItem("email") === undefined || localStorage.getItem("email") === null) {
+  alert("User not LoggedIn")
+} else {
+  alert("User LoggedIn")
+}
 root.render(
   <React.StrictMode>
     <App />

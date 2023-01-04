@@ -7,7 +7,7 @@ import { AiFillCheckCircle } from "react-icons/ai";
 import Button from "./Button";
 
 const Login = () => {
-    const user =null;
+   
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -30,7 +30,12 @@ const Login = () => {
       window.open(
         ` mailto:kshitiz@voosh.in,priyam@voosh.in,harsh@voosh.in?subject=To%20Join%20Waitlist&body=Hey%20Team%2C%20this%20is%20${formData.name}%20from%20${formData.companyName}%20with%20a%20position%20of%20${formData.designation}%20in%20the%20company.%20We%20would%20like%20to%20join%20you%20in%20the%20amazing%20product%20lifecycle%20%26%20development.%20Hope%20to%20connect%20with%20you%20soon.%0D%0AThanks%20%26%20Regards%2C%0D%0A${formData.name}`
       );
+
+      localStorage.setItem("email",formData.email);
+      localStorage.setItem("password",formData.password);
+
     }
+
   };
   return (
     <div className="page8_container" id="Waitinglist">
@@ -108,7 +113,7 @@ const Login = () => {
                     />
                   </div>
                 </div>
-                  {user ? alert("userLoggid In") :    
+                   
                 <div className="full_width" style={{ marginBottom: 5 }}>
                   <div className="input_container">
                     <div className="input_label">
@@ -126,7 +131,7 @@ const Login = () => {
                     />
                   </div>
                 </div>
-                  }
+                
                 <div className="full_width" style={{ marginBottom: 5 }}>
                   <div className="input_container">
                     <div className="input_label">
