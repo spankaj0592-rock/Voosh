@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Voosh/static/css/main.595f288f.css",
+    "main.js": "/Voosh/static/js/main.ad6c9e7f.js",
+    "index.html": "/Voosh/index.html",
+    "main.595f288f.css.map": "/Voosh/static/css/main.595f288f.css.map",
+    "main.ad6c9e7f.js.map": "/Voosh/static/js/main.ad6c9e7f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.595f288f.css",
+    "static/js/main.ad6c9e7f.js"
+  ]
+}
